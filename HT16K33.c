@@ -87,6 +87,6 @@ HAL_StatusTypeDef ht16k33_clear(HT16K33_HandleTypeDef *hdev)
 }
 
 HAL_StatusTypeDef ht16k33_set_led(HT16K33_HandleTypeDef hdev, uint16_t led, uint8_t value) {
-    // hdev->buffer 
+    hdev->buffer[led / 16] |= 0x1 << (led % 16);
     return HAL_OK;
 }
