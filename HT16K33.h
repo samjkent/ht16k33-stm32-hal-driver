@@ -26,4 +26,4 @@ HAL_StatusTypeDef ht16k33_set_brightness(HT16K33_HandleTypeDef *hdev, uint8_t br
 HAL_StatusTypeDef ht16k33_set_blink_rate(HT16K33_HandleTypeDef *hdev, uint8_t blinkRate);
 HAL_StatusTypeDef ht16k33_write_display(HT16K33_HandleTypeDef *hdev);
 HAL_StatusTypeDef ht16k33_clear(HT16K33_HandleTypeDef *hdev);
-HAL_StatusTypeDef ht16k33_set_led(HT16K33_HandleTypeDef *hdev, uint16_t led);
+HAL_StatusTypeDef ht16k33_set_led(HT16K33_HandleTypeDef *hdev, uint16_t led, uint8_t value);
